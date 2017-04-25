@@ -19,7 +19,7 @@ https://github.com/cloudatcost/api
 
 ## Installation
 ```bash
-$ go get github.com/masayukioguni/go-cloudatcost/cloudatcost
+$ go get github.com/Blackturtle123/go-cloudatcost/cloudatcost
 ```
 
 ## Example
