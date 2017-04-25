@@ -135,4 +135,5 @@ type CreateServerOptions struct {
 	Ram     string `json:"ram"`
 	Storage string `json:"storage"`
 	OS      string `json:"os"`
+	Datacenter string `json:"datacenter"`
 }

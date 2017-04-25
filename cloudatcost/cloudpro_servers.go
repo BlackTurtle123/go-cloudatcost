@@ -36,6 +36,7 @@ func (s *CloudProService) Create(opt *CreateServerOptions) (*CloudProServerRespo
 	parameters.Add("os", opt.OS)
 	parameters.Add("ram", opt.Ram)
 	parameters.Add("storage", opt.Storage)
+	parameters.Add("datacenter", opt.Datacenter)
 
 	req, err := s.client.NewFormRequest("POST", u, parameters)
 	if err != nil {
