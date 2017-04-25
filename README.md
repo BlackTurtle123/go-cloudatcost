@@ -25,7 +25,7 @@ package main
 
 import (
   "fmt"
-  "github.com/masayukioguni/go-cloudatcost/cloudatcost"
+  "github.com/BlackTurtle123/go-cloudatcost/cloudatcost"
   "os"
 )
 
