@@ -6,7 +6,7 @@ go-cloudatcost was heavily inspired by the go-github library.
 
 forked from github.com/masayukioguni/go-cloudatcost/cloudatcost
 
-**GoDoc:** [![GoDoc](https://godoc.org/github.com/masayukioguni/go-cloudatcost/cloudatcost?status.svg)](https://godoc.org/github.com/masayukioguni/go-cloudatcost/cloudatcost)
+**GoDoc:** [![GoDoc](https://godoc.org/github.com/BlackTurtle123/go-cloudatcost/cloudatcost?status.svg)](https://godoc.org/github.com/BlackTurtle123/go-cloudatcost/cloudatcost)
 
 API Version: `v1`
 
