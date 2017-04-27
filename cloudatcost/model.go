@@ -16,7 +16,7 @@ type ConsoleResponse struct {
 	Console  string `json:"console"`
 }
 
-type RunModeResponse struct {
+type PowerOperationResponse struct {
 	Status   string `json:"status"`
 	Time     int    `json:"time"`
 	API      string `json:"api"`

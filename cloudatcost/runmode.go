@@ -32,8 +32,8 @@ func (s *RunModeService) Mode(serverId, action string) (*RunModeResponse, *http.
 }
 
 func (s *RunModeService) Normal(serverId string) (*RunModeResponse, *http.Response, error) {
-	return s.Action(serverId, "normal")
+	return s.Mode(serverId, "normal")
 }
 func (s *RunModeService) Safe(serverId string) (*RunModeResponse, *http.Response, error) {
-	return s.Action(serverId, "safe")
+	return s.Mode(serverId, "safe")
 }
