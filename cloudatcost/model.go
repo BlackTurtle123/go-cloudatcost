@@ -16,13 +16,20 @@ type ConsoleResponse struct {
 	Console  string `json:"console"`
 }
 
-type PowerOperationResponse struct {
+type RunModeResponse struct {
 	Status   string `json:"status"`
 	Time     int    `json:"time"`
 	API      string `json:"api"`
 	Action   string `json:"action"`
 	Serverid string `json:"serverid"`
 	Taskid   int64  `json:"taskid"`
+	Result   string `json:"result"`
+}
+type RunModeResponse struct {
+	Status   string `json:"status"`
+	Time     int    `json:"time"`
+	API      string `json:"api"`
+	Serverid string `json:"serverid"`
 	Result   string `json:"result"`
 }
 

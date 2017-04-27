@@ -40,7 +40,7 @@ type Client struct {
 	ServersService         *ServersService
 	ListTemplatesService   *ListTemplatesService
 	ListTasksService       *ListTasksService
-	PowerOperationsService *PowerOperationsService
+	PowerOperationsService *RunModeService
 	ConsoleService         *ConsoleService
 	DnsService             *DnsService
 	CloudProService        *CloudProService
@@ -67,7 +67,7 @@ func NewClient(option *Option) (*Client, error) {
 	c.ServersService = &ServersService{client: c}
 	c.ListTemplatesService = &ListTemplatesService{client: c}
 	c.ListTasksService = &ListTasksService{client: c}
-	c.PowerOperationsService = &PowerOperationsService{client: c}
+	c.PowerOperationsService = &RunModeService{client: c}
 	c.ConsoleService = &ConsoleService{client: c}
 	c.DnsService = &DnsService{client: c}
 	c.CloudProService = &CloudProService{client: c}
