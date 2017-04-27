@@ -9,7 +9,7 @@ type PowerOperationsService struct {
 	client *Client
 }
 
-func (s *PowerOperationsService) Action(serverId, action string) (*RunModeResponse, *http.Response, error) {
+func (s *PowerOperationsService) Action(serverId, action string) (*PowerOperationResponse, *http.Response, error) {
 	u := "/api/v1/powerop.php"
 
 	parameters := url.Values{}
@@ -23,7 +23,7 @@ func (s *PowerOperationsService) Action(serverId, action string) (*RunModeRespon
 		return nil, nil, err
 	}
 
-	por := new(RunModeResponse)
+	por := new(PowerOperationResponse)
 	resp, err := s.client.Do(req, por)
 	if err != nil {
 		return nil, resp, err
@@ -31,12 +31,12 @@ func (s *PowerOperationsService) Action(serverId, action string) (*RunModeRespon
 	return por, resp, err
 }
 
-func (s *PowerOperationsService) PowerOn(serverId string) (*RunModeResponse, *http.Response, error) {
+func (s *PowerOperationsService) PowerOn(serverId string) (*PowerOperationResponse, *http.Response, error) {
 	return s.Action(serverId, "poweron")
 }
-func (s *PowerOperationsService) PowerOff(serverId string) (*RunModeResponse, *http.Response, error) {
+func (s *PowerOperationsService) PowerOff(serverId string) (*PowerOperationResponse, *http.Response, error) {
 	return s.Action(serverId, "poweroff")
 }
-func (s *PowerOperationsService) Reset(serverId string) (*RunModeResponse, *http.Response, error) {
+func (s *PowerOperationsService) Reset(serverId string) (*PowerOperationResponse, *http.Response, error) {
 	return s.Action(serverId, "reset")
 }

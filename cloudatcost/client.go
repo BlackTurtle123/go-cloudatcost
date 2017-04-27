@@ -40,10 +40,11 @@ type Client struct {
 	ServersService         *ServersService
 	ListTemplatesService   *ListTemplatesService
 	ListTasksService       *ListTasksService
-	PowerOperationsService *RunModeService
+	PowerOperationsService *PowerOperationsService
 	ConsoleService         *ConsoleService
 	DnsService             *DnsService
 	CloudProService        *CloudProService
+	RunModeService         *RunModeService
 }
 
 // An ErrorResponse reports one or more errors caused by an API request.
@@ -67,10 +68,11 @@ func NewClient(option *Option) (*Client, error) {
 	c.ServersService = &ServersService{client: c}
 	c.ListTemplatesService = &ListTemplatesService{client: c}
 	c.ListTasksService = &ListTasksService{client: c}
-	c.PowerOperationsService = &RunModeService{client: c}
+	c.PowerOperationsService = &PowerOperationsService{client: c}
 	c.ConsoleService = &ConsoleService{client: c}
 	c.DnsService = &DnsService{client: c}
 	c.CloudProService = &CloudProService{client: c}
+	c.RunModeService = &RunModeService{client: c}
 
 	return c, nil
 }
