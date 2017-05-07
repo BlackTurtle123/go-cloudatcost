@@ -53,8 +53,8 @@ type ListTasksResponse struct {
 }
 
 type ListTemplate struct {
-	ID     string `json:"id"`
-	Detail string `json:"detail"`
+	ce_id    string `json:"ce_id"`
+	name string `json:"name"`
 }
 
 type ListTemplatesResponse struct {
