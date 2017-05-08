@@ -113,15 +113,15 @@ type CloudProServerResponse struct {
 }
 
 type CloudProResourcesTotalResponse struct {
-	CPU     int `json:"cpu_total"`
-	Ram     int `json:"ram_total"`
-	Storage int `json:"storage_total"`
+	CPU     string `json:"cpu_total"`
+	Ram     string `json:"ram_total"`
+	Storage string `json:"storage_total"`
 }
 
 type CloudProResourcesUsedResponse struct {
-	CPU     int `json:"cpu_used"`
-	Ram     int `json:"ram_used"`
-	Storage int `json:"storage_used"`
+	CPU     string `json:"cpu_used"`
+	Ram     string `json:"ram_used"`
+	Storage string `json:"storage_used"`
 }
 
 type CloudProResourcesData struct {
